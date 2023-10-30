@@ -1,0 +1,13 @@
+vsftpd:
+  image: m44764735/vsftpd
+#  net: host
+  ports:
+   - "20:20"
+   - "21:21"
+#  volumes:
+#    - ./vsftpd:/etc/vsftpd
+#    - ./ftp:/var/lib/ftp
+#   - ./pam.d/vsftpd:/etc/pam.d/vsftpd
+#   - ./virtual:/home/virtual
+  privileged: true
+#  restart: always
